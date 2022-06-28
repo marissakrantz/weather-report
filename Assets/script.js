@@ -46,12 +46,12 @@ function populateCityWeather(city, citySearchList) {
     url: queryURL,
     method: "GET"
   })
-    // Store all of the retrieved data inside of an object called "weather"
+    // Store retrieved data inside of object "weather"
     .then(function (weather) {
       // Log the queryURL
       console.log(queryURL);
 
-      // Log the resulting object
+      // Log the object
       console.log(weather);
 
       var nowMoment = moment();
@@ -98,7 +98,7 @@ function populateCityWeather(city, citySearchList) {
         $.ajax({
           url: queryURL3,
           method: "GET"
-          // Store all of the retrieved data inside of an object called "uvResponse"
+          // Store retrieved data inside of object "uvResponse"
         }).then(function (uvResponse) {
           console.log(uvResponse);
           var uvIndex = uvResponse[0].value;
@@ -128,7 +128,7 @@ function populateCityWeather(city, citySearchList) {
           $.ajax({
             url: queryURL2,
             method: "GET"
-            // Store all of the retrieved data inside of an object called "forecast"
+            // Store retrieved data inside of object "forecast"
           }).then(function (forecast) {
             console.log(queryURL2);
 
@@ -205,7 +205,7 @@ $(document).ready(function () {
       .toLowerCase();
 
     if (city != "") {
-      //Check to see if there is any text entered
+      // see if there is any text entered
 
       citySearchList[city] = true;
       localStorage.setItem("citySearchList", JSON.stringify(citySearchList));
