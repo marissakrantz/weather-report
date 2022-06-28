@@ -28,7 +28,7 @@ h4 {
     background-color: var(--blue);
     color: white;
 }
-  
+
 .custom-btn:hover {
     background-color: var(--lightblue);
     color: white;
@@ -63,6 +63,20 @@ h4 {
     margin: 10px;
 }
 
+#forecast-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center/space-between;
+}
 
+@media screen and (max-width: 768px),
+screen and (max-width: 575px) {
+    .row {
+        height: auto;
+        margin-top: 20px;
+    }
 
-
+    .col {
+        width: 100%;
+    }
+}
