@@ -1,0 +1,68 @@
+:root {
+    --blue: rgb(52, 163, 167);
+    --lightblue: rgba(250, 200, 34, 0.92);
+}
+
+body {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+}
+
+.custom-jumbotron {
+    background-color: var(--blue);
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+}
+
+#header {
+    padding: 15px;
+}
+
+.custom-btn {
+    background-color: var(--blue);
+    color: white;
+}
+  
+.custom-btn:hover {
+    background-color: var(--lightblue);
+    color: white;
+}
+
+.btn-custom:hover {
+    cursor: text;
+}
+
+.list-group-item-action:hover {
+    background-color: var(--lightblue);
+    color: white;
+}
+
+#clear-history {
+    margin-top: 30px;
+}
+
+#city-date-icon,
+#city-name,
+#current-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center/space-around/space-between;
+}
+
+#forecast-header {
+    margin-top: 10px;
+}
+
+.forecast {
+    margin: 10px;
+}
+
+
+
+
